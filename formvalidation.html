@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        *{
+            margin: 10px;
+            background-color: rgb(255, 248, 238);
+        }
+        span{
+            color: red;
+            background-color: transparent;
+        }
+        label{
+            width: 150px;
+            display: inline-block;
+            border-radius: 5px;
+            text-align: right;
+            background-color: transparent;
+        }
+        input,select,button{
+            border-radius: 5px;
+        }
+        form{
+            border: 5px solid navy;
+            border-style: double;
+            background-color: rgb(184, 253, 230, 0.8); 
+            align-items: center;
+        }
+        form:hover{
+            text-shadow: 1px 1px 2px rgba(0, 0, 127, 0.5);
+            font-weight: 500;
+            box-shadow: 2px 2px 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center; text-shadow: 2px 2px 5px rgb(0, 255, 170);"><u>Login Form</u></h1>
+    
+    <form name="valifirm">
+
+    <label>Username:</label>
+    <input type="text" name="" id="username">
+    <span id="msg"></span>
+    <br>
+
+    <label for="email">Email:</label>
+    <input type="text" name="" id="email">
+    <span id="msg1"></span>
+    <br>
+
+    <label for="mnumber">Mobile Number:</label>
+    <input type="text" name="" id="mnumber" maxlength="10">
+    <span id="msg2"></span>
+    <br>
+
+    <label for="dob">DOB:</label>
+    <input type="date" name="" id="dob">
+    <span id="msg3"></span>
+    <br>
+
+    <label for="">Gender:</label>
+    <input type="radio" name="gender" value="male" id="male">
+    Male
+    <input type="radio" name="gender" value="female" id="female">
+    Female
+    <input type="radio" name="gender" value="other" id="other">
+    Other
+    <span id="msg4"></span>
+    <br>
+
+    <label for="">Hobbies:</label>
+    <input type="checkbox" name="hobbies" id="traveling">
+    Traveling
+    <input type="checkbox" name="hobbies" id="badminton">
+    Badminton
+    <input type="checkbox" name="hobbies" id="cricket">
+    Cricket
+    <!-- <input type="checkbox" name="hobbies" id="banking">
+    Banking -->
+    <span id="msg5"></span>
+    <br>
+
+    <label for="city">Select :</label>
+    <select name="drop" id="city" value="select" style="width: 170px;">
+        <option value="select">Select City</option>
+        <optgroup label="Maharashtra">
+            <option value="">Mumbai</option>
+            <option value="">Pune</option>
+        </optgroup>
+        <optgroup label="Gujarat">
+            <option value="">Ahmedabad</option>
+            <option value="">Rajkot</option>
+        </optgroup>
+        <optgroup label="Rajasthan">
+            <option value="">Jaipur</option>
+            <option value="">Udaipur</option>
+        </optgroup>
+        <option value="other">Other</option>
+    </select>
+    <input type="text" id="othercity" style="display: none;">
+    <span id="msg6"></span>
+    <br>
+
+    <label for="password">Password:</label>
+    <input type="password" name="" id="password"></label>
+    <button type="button" id="showhide"><i class="bi bi-eye-slash"></i></button>
+    <span id="msg7"></span>
+    <br>
+
+    <label for="cpassword">Confirm Password:</label>
+    <input type="password" name="" id="cpassword">
+    <span id="msg8"></span>
+    <br>
+
+    <label for=""></label>
+    <button type="button" id="submit" value="login" name="sub">Login</button>
+    <button type="button" id="reset" value="reset" name="reset">Reset</button>
+    </form>
+
+    <script src="formvalidation.js"></script>
+</body>
+</html>
