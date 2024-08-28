@@ -1,5 +1,4 @@
-nameerror=true // this is global vaiable (its called as flag)
-                // initialy true it mean k submit button par click karo tyare username box empty hase to error show thase 
+nameerror=true // this is global vaiable (its called as flag)// initialy true it mean k submit button par click karo tyare username box empty hase to error show thase 
 emailerror=true 
 mobileerror=true
 doberror=true
